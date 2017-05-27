@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/stylesheets/style.css">
+<h1>MONGODB - User file</h1>
+<section class="get">
+  <h3>Get Data</h3>
+  <a href="/viewUsers">LOAD DATA</a>
+  <div>
+    {{# each items }}
+    <article class="item">
+      <div>First Name: {{ this.first }}</div>
+      <div>Surname: {{ this.surname }}</div>
+      <div>Email: {{ this.email }}</div>
+      <div>ID: {{ this._id }}</div>
+      <div>Photo: {{ this.photo }}</div>
+    </article>
+    {{/each}}
+  </div>
+</section>

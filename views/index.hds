@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="/stylesheets/style.css">
+<img height="250px" src="/img/HMLoginApp.jpg" width="250px" align="middle" style="border: 5px;;opacity: 0.8;margin-left: 36%; margin-right: 36%;"/>
+
+<h1>MONGODB - User Group</h1>
+<section class="insert">
+  <h3>Insert Data</h3>
+  <form action="/insert" method="post" enctype="multipart/form-data">
+    <div class="input">
+      <label for="first">First Name</label>
+      <input type="text" id="first" name="first" required/>
+    </div>
+    <div class="input">
+      <label for="surname">Surname</label>
+      <input type="text" id="surname" name="surname">
+    </div>
+    <div class="input">
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="email">
+    </div>
+    <div class="input">
+      <label for="photos">Photo</label>
+      <input type="file" id="photos" name="photos">
+    </div>
+    <button type="submit">INSERT</button>
+  </form>
+</section>
+<section class="get">
+  <h3>Get Data</h3>
+  <a href="/viewUsers">LOAD DATA</a>
+  <div>
+    {{# each items }}
+    <article class="item">
+      <div>First Name: {{ this.first }}</div>
+      <div>Surname: {{ this.surname }}</div>
+      <div>Email: {{ this.email }}</div>
+      <div>ID: {{ this._id }}</div>
+      <div>Photo: {{ this.photo }}</div>
+    </article>
+    {{/each}}
+  </div>
+</section>
+<section class="update">
+  <h3>Update Data</h3>
+  <form action="/update"  method="post" enctype="multipart/form-data">
+    <div class="input">
+      <label for="id">ID</label>
+      <input type="text" id="id" name="id" required/>
+    </div>
+    <div class="input">
+      <label for="first">First Name</label>
+      <input type="text" id="first" name="first">
+    </div>
+    <div class="input">
+      <label for="surname">Surname</label>
+      <input type="text" id="surname" name="surname">
+    </div>
+    <div class="input">
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="email">
+    </div>
+    <div class="input">
+      <label for="photos">Photo</label>
+      <input type="file" id="photos" name="photos">
+    </div>
+    <button type="submit">UPDATE</button>
+  </form>
+</section>
+<section class="delete">
+  <h3>Delete Data</h3>
+  <form action="/delete" method="post">
+    <div class="input">
+      <label for="id">ID</label>
+      <input type="text" id="id" name="id" required/>
+    </div>
+    <button type="submit">DELETE</button>
+  </form>
+</section>
