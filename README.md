@@ -1,5 +1,4 @@
 # [![com.HelloMedia.API](https://github.com/jmullings/com.HelloMedia.API/blob/master/uploads/Screen%20Shot%202017-05-27%20at%208.56.11%20PM.png?raw=true)](https://github.com/jmullings/com.HelloMedia.API)
-
 ## Overview
 
 [Hello Media API](https://developers.google.com/web/tools/starter-kit/) is part of a full-stack web development assessment, which included Node.JS API for Mongo, Heroku, Firebase deployment
@@ -16,12 +15,11 @@
 | Built-in HTTP Server                   | A built-in server for previewing your data can be extended for other purposes.                                                                                                                                                                           |
 | Use NPM, Node.JS and Express.js                |  The full node family was used here and some unused dependcies remain the the node_modules folder.                                                                                                                            |
 | Testing: mocha and Supertest style          |  Run: `npm test` - to review test script; easy to run and extend.               |
-| Heroku deployment                     | https://hmloginapp.herokuapp.com/ https://herokuapp.com/                                                                                                                                              |
+| Heroku deployment / With optional maile     | https://hmloginapp.herokuapp.com/ https://herokuapp.com/                                                                                                                                              |
 | Handle Bars                     | Web performance web proformance and speed of development guilds me to use HandleBars; though .jade and .ejs can still be used to extend this API applicaiton.                                                                                                                                                   |
 
 ## Quickstart
 
-[Download](https://github.com/google/web-starter-kit/releases/latest) the kit or clone this repository and build on what is included in the `app` directory.
 - `npm start` - Standard node opporations have been used in the assessment
 
 
@@ -40,20 +38,6 @@ At present, I have tested the web functions on the following browsers:
 ## Troubleshooting
 
 Please note that this is merely a Demo and much of the exception handling functions have been ommitted, though mongoDB asserts have been lefted inside the API
-## Docs and Recipes
-
-* [File Appendix](https://github.com/google/web-starter-kit/blob/master/docs/file-appendix.md) - What do the different files here do?
-* [Using Material Design Lite's Sass](https://github.com/google/web-starter-kit/blob/master/docs/mdl-sass.md) - how to get MDL's Sass working with WSK
-* [Deployment guides](https://github.com/google/web-starter-kit/blob/master/docs/deploy.md) - available for Firebase, Google App Engine and other services.
-* [Gulp recipes](https://github.com/gulpjs/gulp/tree/master/docs/recipes) - the official Gulp recipes directory includes a comprehensive list of guides for different workflows you can add to your project.
-
-## Inspiration
-
-I have collected this API, Firebase application and iOS application from numerous sources
-* 
-* 
-* 
-* 
 
 ## License
 
